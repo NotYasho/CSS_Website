@@ -1,2 +1,2 @@
 # CSS Website
-Preview it on [Github Pages](https://yasho022.github.io/CSS_Website/)
+Preview it on [Github Pages](https://notyasho.github.io/CSS_Website/)
