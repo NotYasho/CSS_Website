@@ -1,94 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&display=swap');
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins','sans-serif';
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', 'sans-serif';
 }
 
-.main{
-    min-height: 100vh;
-    width: 100%;
-    background-color: black;
-    background-image: url(https://cdn.dribbble.com/users/214929/screenshots/4967879/ai-loader-opt.gif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    color: white;
-    padding: 0 8%;
+.main {
+	min-height: 100vh;
+	width: 100%;
+	background-color: black;
+	background-image: url(https://cdn.dribbble.com/users/214929/screenshots/4967879/ai-loader-opt.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	color: white;
+	padding: 0 8%;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0px;
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0px;
 }
-.logo{
-    width: 160px;
+
+.logo {
+	margin-top: 8px;
 }
-nav ul li{
+
+.logo::before {
+    content: "";
     display: inline-block;
-    list-style: none;
-    margin: 10px 30px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration: none;
-}
-
-.main h1{
-    line-height: 10vh;
-    font-size: 62px;
-    margin-top: 12%;
-}
-
-.main button{
-    background: #211f2b;
-    border: 0;
-    outline: none;
-    padding: 15px 35px;
-    color: #fff;
-    margin-top: 25px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.indicator span{
-    display: inline-block;
-    background: #3a3a3a;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border-radius: 100%;
     margin-right: 10px;
+    background: linear-gradient(to right, #7700ff, #8111cc);
 }
 
-.indicator{
-    margin-top: 150px;
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 30px;
 }
 
-.indicator span.active{
-    background:#bfbfbf;
+nav ul li a {
+	color: white;
+	text-decoration: none;
 }
-.action{
-    position: absolute;
-    width: 25%;
-    min-width: 48vh;
-    right: 8%;
-    bottom: 58px;
+
+.main h1 {
+	line-height: 10vh;
+	font-size: 62px;
+	margin-top: 12%;
 }
-.action p a{
-    text-decoration: none;
-    color: rgb(215, 191, 253);
+
+.main button {
+	background: rgba(33, 31, 43, 0.6);
+	border: 0;
+	outline: none;
+	padding: 15px 35px;
+	color: #fff;
+	margin-top: 25px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	cursor: pointer;
+	border-radius: 10px;
+    transition: 0.1s;
 }
-.action button{
-    background-color: rgba(33,31,43,0.6);
-    height: 10px;
-    width: 89px;
-    padding-left: 20px;
-    padding-bottom: 35px;
-    transition: all 0.2s ease-in-out;
+
+.indicator span {
+	display: inline-block;
+	background: #3a3a3a;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin-right: 10px;
 }
+
+.indicator {
+	margin-top: 150px;
+}
+
+.indicator span.active {
+	background: #bfbfbf;
+}
+.action {
+	position: absolute;
+	width: 25%;
+	min-width: 48vh;
+	right: 8%;
+	bottom: 58px;
+}
+.action p a {
+	text-decoration: none;
+	color: rgb(190, 167, 255);
+}
+
+.action p a:hover {
+    color: rgb(150, 112, 255);
+    text-decoration: underline;
+}
+
+.action button {
+	background-color: rgba(33, 31, 43, 0.6);
+	height: 10px;
+	width: 89px;
+	padding-left: 20px;
+	padding-bottom: 35px;
+	transition: all 0.1s ease-in-out;
+}
+
+.action button:hover {
+	background-color: rgba(58, 54, 75, 0.6);
+}
+
+.action button:active {
+	background-color: rgba(35, 33, 46, 0.6);
+}
+
+.main button:hover {
+	background: rgba(58, 54, 75, 0.6);
+}
+
+.main button:active {
+	background-color: rgba(35, 33, 46, 0.6);
+}
+
+ul li a:hover {
+    color: #d3c7ee;
+}
+
