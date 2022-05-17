@@ -1,40 +1,46 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width", initial-scale=2>
-<title>The Six-T-9</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Six-T-9</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="main">
-    <nav>
-        <h3 class="logo">NotWiki</h3>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About Us</a></li>
-            <li><a href="/">Contact Us</a></li>
-            <li><a href="/">Rights</a></li>
-        </ul>
+    <body>
 
-    </nav>
-    <h1>What is<br>Centroid?</h1>
-    <button type="button">Explore →</button>
 
-    <div class="indicator">
-        <span></span>
-        <span></span>
-        <span class="active"></span>
+    <div class="main">
+        
+        <nav>
+            <h3 class="logo">NotWiki</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+        </nav>
+
+        <h1>What is<br>Centroid?</h1>
+        <button class="ripple">Explore →</button>
+
+        <div class="indicator">
+            <span class="page" id="active""></span>
+            <span class="page"></span>
+            <span class="page"></span>
+        </div>
+
+        <div class="action">
+            <p>
+                In <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">machine learning</a>, a <strong>nearest centroid classifier</strong> or <strong>nearest prototype classifier</strong> is a classification model that assigns to observations of training samples whose centroid is closest.
+            </p>
+            <button class="ripple">More →</button>
+        </div>
+        
     </div>
-    <div class="action">
-        <p>
-            In <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank">machine learning</a>, a <strong>nearest centroid classifier</strong> or <strong>nearest prototype classifier</strong> is a classification model that assigns to observations of training samples whose centroid is closest.
-            
-        </p>
-        <button type="button">More&nbsp;&#8594;</button>
-    </div>
 
-</div>
 
-<script src="main.js"></script>
 </body>
+<script src="main.js"></script>
 </html>
