@@ -42,35 +42,6 @@ nav ul li a {
 	font-size: 62px;
 	margin-top: 12%;
 }
-/* 
-.indicator span {
-	cursor: pointer;
-	user-select: none;
-	display: inline-block;
-	background: #222531;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	margin-right: 10px;
-}
-
-.indicator {
-	user-select: none;
-	cursor: pointer;
-	margin-top: 15vh;
-}
-
-.indicator span#active {
-	background: #4d2eff;
-}
-
-.indicator span#active:hover {
-	background: #664aff;
-}
-
-.indicator span:not(#active):hover {
-	background: #646464;
-} */
 
 .action {
 	position: absolute;
