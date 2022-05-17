@@ -8,35 +8,22 @@
 }
 
 .main {
-	min-height: 100vh;
-	width: 100%;
-	background-color: black;
+	color: white;
+	background-color: #030106;
 	background-image: url(https://cdn.dribbble.com/users/214929/screenshots/4967879/ai-loader-opt.gif);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 70%;
-	color: white;
-	padding: 0 8%;
+	background-size: 80%;
+	padding: 0 8vw;
+	min-height: 100vh;
 }
+
 nav {
+	user-select: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 0px;
-}
-
-.logo {
-	margin-top: 8px;
-}
-
-.logo::before {
-    content: "";
-    display: inline-block;
-    width: 17px;
-    height: 17px;
-    border-radius: 100%;
-    margin-right: 10px;
-    background: linear-gradient(to right, #7700ff, #8111cc);
 }
 
 nav ul li {
@@ -55,24 +42,12 @@ nav ul li a {
 	font-size: 62px;
 	margin-top: 12%;
 }
-
-.main button {
-	background: rgba(33, 31, 43, 0.6);
-	border: 0;
-	outline: none;
-	padding: 15px 35px;
-	color: #fff;
-	margin-top: 25px;
-	font-weight: 500;
-	letter-spacing: 1px;
-	cursor: pointer;
-	border-radius: 10px;
-    transition: 0.1s;
-}
-
+/* 
 .indicator span {
+	cursor: pointer;
+	user-select: none;
 	display: inline-block;
-	background: #3a3a3a;
+	background: #222531;
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
@@ -80,55 +55,88 @@ nav ul li a {
 }
 
 .indicator {
-	margin-top: 150px;
+	user-select: none;
+	cursor: pointer;
+	margin-top: 15vh;
 }
 
-.indicator span.active {
-	background: #bfbfbf;
+.indicator span#active {
+	background: #4d2eff;
 }
+
+.indicator span#active:hover {
+	background: #664aff;
+}
+
+.indicator span:not(#active):hover {
+	background: #646464;
+} */
+
 .action {
 	position: absolute;
 	width: 25%;
 	min-width: 48vh;
 	right: 8%;
-	bottom: 58px;
+
 }
+
 .action p a {
 	text-decoration: none;
-	color: rgb(190, 167, 255);
+	color: #ac66f7;
 }
 
 .action p a:hover {
-    color: rgb(150, 112, 255);
-    text-decoration: underline;
-}
-
-.action button {
-	background-color: rgba(33, 31, 43, 0.6);
-	height: 10px;
-	width: 89px;
-	padding-left: 20px;
-	padding-bottom: 35px;
-	transition: all 0.1s ease-in-out;
-}
-
-.action button:hover {
-	background-color: rgba(58, 54, 75, 0.6);
-}
-
-.action button:active {
-	background-color: rgba(35, 33, 46, 0.6);
-}
-
-.main button:hover {
-	background: rgba(58, 54, 75, 0.6);
-}
-
-.main button:active {
-	background-color: rgba(35, 33, 46, 0.6);
+	color: rgb(150, 112, 255);
+	text-decoration: underline;
 }
 
 ul li a:hover {
-    color: #d3c7ee;
+	color: rgb(150, 112, 255);
 }
 
+button {
+	color: #fff;
+	background: rgba(33, 31, 43, 0.6);
+	padding: 15px 35px;
+	margin-top: 25px;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: background 150ms ease-in-out, box-shadow 300ms, transform 300ms ease-out;
+	user-select: none;
+	cursor: pointer;
+}
+button:hover {
+	background-color: rgba(58, 54, 75, 0.6);
+}
+
+/* Ripple effect */
+
+.ripple {
+	overflow: hidden;
+	position: relative;
+}
+
+span {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.356);
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	border-radius: 50%;
+	animation: ripple 400ms linear forwards;
+}
+
+@keyframes ripple {
+	0% {
+		width: 0px;
+		height: 0px;
+		opacity: 0.3;
+	}
+	100% {
+		width: 500px;
+		height: 500px;
+		opacity: 0;
+	}
+}
